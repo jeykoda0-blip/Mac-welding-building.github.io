@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Welding Building | Carports Metálicos y Estructuras de Acero</title>
+    <meta name="description" content="Servicios profesionales de carports metálicos personalizados, estructuras de acero, soldadura y fabricación en EE. UU. Construidos con fuerza y durabilidad.">
+    <meta name="keywords" content="carports metálicos, construcción de carports, servicios de soldadura, estructuras de acero, fabricación metálica, Mac welding and building">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mac Welding Building | Carports Metálicos y Estructuras de Acero">
+    <meta property="og:description" content="Carports metálicos personalizados, estructuras de acero y servicios de soldadura profesional.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://macweldingbuilding.com">
+    <meta property="og:image" content="https://placehold.co/1200x630/111827/f97316?text=Mac+Welding+Building">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        industrial: {
+                            900: '#0a0d14',
+                            800: '#111827',
+                            700: '#1f2937',
+                            600: '#374151',
+                            500: '#4b5563',
+                        },
+                        accent: {
+                            DEFAULT: '#f97316', // Safety Orange
+                            hover: '#ea580c',
+                            light: '#ffedd5'
+                        },
+                        steel: {
+                            light: '#9ca3af',
+                            DEFAULT: '#6b7280',
+                            dark: '#4b5563'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mac Welding Building",
+      "image": "https://placehold.co/600x400/111827/f97316?text=Mac+Welding+Building",
+      "@id": "https://macweldingbuilding.com",
+      "url": "https://macweldingbuilding.com",
+      "telephone": "+13466725318",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Industrial Parkway",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77001",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.facebook.com/search/top?q=Mac%20welding%20and%20building"
+      ]
+    }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0d14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f97316;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(10, 13, 20, 0.85), rgba(17, 24, 39, 0.95)), url('https://placehold.co/1920x1080/111827/374151?text=Steel+Structure+Background') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-industrial-900 text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <script>
+        window.MAC_CONFIG = {
+            businessName: "Mac Welding Building",
+            phone: "+1 (346) 672-5318",
+            phoneRaw: "+13466725318",
+            whatsappRaw: "13466725318",
+            facebookUrl: "https://www.facebook.com/search/top?q=Mac%20welding%20and%20building",
+            email: "info@macweldingbuilding.com",
+            address: "123 Industrial Parkway, Houston, TX 77001",
+            serviceAreas: ["Houston", "Katy", "Sugar Land", "The Woodlands", "Pearland", "Conroe", "Pasadena"],
+            hours: "Lun - Sáb: 7:00 AM - 6:00 PM"
+        };
+    </script>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 bg-industrial-800 border-l-4 border-accent shadow-2xl rounded-r-xl p-4 flex items-center space-x-3 max-w-md">
+        <div id="toast-icon" class="text-accent text-xl"></div>
+        <div>
+            <h4 id="toast-title" class="font-bold text-white text-sm"></h4>
+            <p id="toast-msg" class="text-gray-300 text-xs"></p>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-industrial-900/90 backdrop-blur-md border-b border-industrial-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#home" onclick="switchView('home')" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 bg-industrial-800 border border-industrial-600 rounded-xl flex items-center justify-center group-hover:border-accent transition-colors shadow-lg">
+                    <!-- Original SVG Logo -->
+                    <svg class="w-8 h-8 text-accent" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 80L35 25H50L65 80H53L48 60H32L27 80H15Z" fill="currentColor"/>
+                        <path d="M60 80L73 35H83L96 80H84L81 68H75L72 80H60Z" fill="currentColor"/>
+                        <rect x="20" y="48" width="23" height="6" fill="#f3f4f6"/>
+                        <path d="M10 85H90V92H10V85Z" fill="#f97316"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider text-white">MAC WELDING</span>
+                    <span class="block text-xs font-semibold tracking-widest text-accent uppercase">& BUILDING</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#home" onclick="switchView('home')" class="hover:text-accent transition-colors">Inicio</a>
+                <a href="#services" onclick="switchView('home'); scrollToSection('services')" class="hover:text-accent transition-colors">Servicios</a>
+                <a href="#projects" onclick="switchView('home'); scrollToSection('projects')" class="hover:text-accent transition-colors">Proyectos</a>
+                <a href="#process" onclick="switchView('home'); scrollToSection('process')" class="hover:text-accent transition-colors">Proceso</a>
+                <a href="#faq" onclick="switchView('home'); scrollToSection('faq')" class="hover:text-accent transition-colors">Preguntas</a>
+                <a href="#contact" onclick="switchView('home'); scrollToSection('contact')" class="hover:text-accent transition-colors">Contacto</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="tel:+13466725318" class="flex items-center space-x-2 text-sm font-bold text-gray-200 bg-industrial-800 px-4 py-2.5 rounded-xl border border-industrial-700 hover:border-accent transition-all">
+                    <i class="fa-solid fa-phone text-accent"></i>
+                    <span>(346) 672-5318</span>
+                </a>
+                <a href="https://www.facebook.com/search/top?q=Mac%20welding%20and%20building" target="_blank" class="w-10 h-10 bg-industrial-800 border border-industrial-700 hover:border-blue-500 hover:text-blue-400 text-gray-300 rounded-xl flex items-center justify-center transition-all" title="Facebook: Mac welding and building">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <button onclick="switchView('quote')" class="bg-accent hover:bg-accent-hover text-white font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-accent/20 transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span>Cotizar Proyecto</span>
+                </button>
+            </div>
+
+            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden text-gray-300 hover:text-white p-2 rounded-lg bg-industrial-800 border border-industrial-700">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-drawer" class="hidden md:hidden bg-industrial-800 border-b border-industrial-700 px-6 py-6 space-y-4">
+            <a href="#home" onclick="switchView('home'); toggleMobileMenu()" class="block text-base font-medium text-gray-200 hover:text-accent">Inicio</a>
+            <a href="#services" onclick="switchView('home'); toggleMobileMenu(); scrollToSection('services')" class="block text-base font-medium text-gray-200 hover:text-accent">Servicios</a>
+            <a href="#projects" onclick="switchView('home'); toggleMobileMenu(); scrollToSection('projects')" class="block text-base font-medium text-gray-200 hover:text-accent">Proyectos</a>
+            <a href="#process" onclick="switchView('home'); toggleMobileMenu(); scrollToSection('process')" class="block text-base font-medium text-gray-200 hover:text-accent">Proceso</a>
+            <a href="#faq" onclick="switchView('home'); toggleMobileMenu(); scrollToSection('faq')" class="block text-base font-medium text-gray-200 hover:text-accent">Preguntas</a>
+            <a href="#contact" onclick="switchView('home'); toggleMobileMenu(); scrollToSection('contact')" class="block text-base font-medium text-gray-200 hover:text-accent">Contacto</a>
+            <div class="pt-4 border-t border-industrial-700 flex flex-col space-y-3">
+                <a href="tel:+13466725318" class="w-full py-3 bg-industrial-900 border border-industrial-600 rounded-xl text-center font-bold text-white flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-phone text-accent"></i>
+                    <span>Llamar (346) 672-5318</span>
+                </a>
+                <a href="https://www.facebook.com/search/top?q=Mac%20welding%20and%20building" target="_blank" class="w-full py-3 bg-industrial-900 border border-industrial-600 rounded-xl text-center font-bold text-white flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-facebook text-blue-500"></i>
+                    <span>Facebook: Mac welding and building</span>
+                </a>
+                <button onclick="switchView('quote'); toggleMobileMenu()" class="w-full py-3 bg-accent hover:bg-accent-hover text-white rounded-xl font-bold shadow-lg shadow-accent/20 text-center">
+                    Cotizar Proyecto
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-view-container">
+
+        <!-- HOME VIEW -->
+        <div id="view-home" class="view-section">
+            
+            <!-- Hero Section -->
+            <section class="relative hero-bg py-24 lg:py-36 px-4 sm:px-6 lg:px-8 border-b border-industrial-700">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-8">
+                        <div class="inline-flex items-center space-x-2 bg-industrial-800/80 border border-industrial-600 px-4 py-2 rounded-full text-accent text-xs font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Especialistas en Acero y Estructuras Certificadas</span>
+                        </div>
+                        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none">
+                            Carports Metálicos, Estructuras de Acero y <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-amber-500">Servicios de Soldadura</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-normal">
+                            Construidos con fuerza. Hechos para durar. Fabricación de acero estructural de grado industrial, carports de alta resistencia y soldadura experta.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-2">
+                            <button onclick="switchView('quote')" class="bg-accent hover:bg-accent-hover text-white font-extrabold text-lg px-8 py-4 rounded-2xl shadow-xl shadow-accent/25 transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center space-x-3">
+                                <i class="fa-solid fa-ruler-combined"></i>
+                                <span>Solicitar Cotización</span>
+                            </button>
+                            <a href="#projects" onclick="scrollToSection('projects')" class="bg-industrial-800 hover:bg-industrial-700 border border-industrial-600 text-white font-bold text-lg px-8 py-4 rounded-2xl transition-all text-center">
+                                Explorar Proyectos
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-industrial-700/60 text-gray-400">
+                            <div>
+                                <div class="text-2xl font-black text-white">15+</div>
+                                <div class="text-xs uppercase tracking-wider">Años de Experiencia</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black text-white">1,200+</div>
+                                <div class="text-xs uppercase tracking-wider">Proyectos Completados</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-black text-white">100%</div>
+                                <div class="text-xs uppercase tracking-wider">Satisfacción</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Estimate Card -->
+                    <div class="lg:col-span-5 bg-industrial-800/90 border border-industrial-700 p-8 rounded-3xl shadow-2xl backdrop-blur-md">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-10 h-10 bg-accent/20 rounded-xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-ruler-horizontal text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Cotización Rápida</h3>
+                                <p class="text-xs text-gray-400">Envía directo a nuestro WhatsApp (346) 672-5318</p>
+                            </div>
+                        </div>
+                        <form onsubmit="handleQuickQuote(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Nombre de la persona</label>
+                                <input type="text" id="quick-name" required placeholder="Ej. Juan Pérez" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent text-sm">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Teléfono</label>
+                                    <input type="tel" id="quick-phone" required placeholder="(346) 672-5318" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Medidas aproximadas</label>
+                                    <input type="text" id="quick-measure" required placeholder="Ej. 20x30 ft, altura 14ft" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent text-sm">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-300 uppercase mb-1">¿Qué es lo que quiere?</label>
+                                <textarea rows="2" id="quick-what" required placeholder="Ej. Un carport metálico para dos autos con techo vertical..." class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent text-sm"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-emerald-900/30 transition-all flex items-center justify-center space-x-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Enviar por WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Introduction Section -->
+            <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="inline-block bg-accent/10 border border-accent/20 px-3 py-1 rounded-md text-accent text-xs font-bold uppercase tracking-wider">
+                            Acerca de Mac Welding Building
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                            Ingeniería de Excelencia y Soldadura de Precisión Para Clientes Residenciales e Industriales
+                        </h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            En Mac Welding Building combinamos tecnología de punta en fabricación metálica con décadas de maestría en soldadura. Ya sea que necesite una estructura de acero comercial de alta resistencia, carports arquitectónicos personalizados o reparaciones estructurales urgentes, nuestro equipo garantiza una calidad impecable desde el diseño hasta la instalación.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 pt-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 rounded-lg bg-accent/20 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Soldadores Certificados</h4>
+                                    <p class="text-xs text-gray-400">Profesionales certificados AWS.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 rounded-lg bg-accent/20 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Diseño a Medida</h4>
+                                    <p class="text-xs text-gray-400">Adaptado a normas de viento y carga.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 rounded-lg bg-accent/20 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Servicio Llave en Mano</h4>
+                                    <p class="text-xs text-gray-400">Desde permisos hasta instalación final.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 rounded-lg bg-accent/20 text-accent flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Garantía Sólida</h4>
+                                    <p class="text-xs text-gray-400">Respaldo estructural garantizado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-accent to-amber-600 rounded-3xl blur opacity-25"></div>
+                        <div class="relative bg-industrial-800 border border-industrial-700 p-4 rounded-3xl shadow-2xl">
+                            <img src="https://placehold.co/800x600/111827/f97316?text=Soldadura+Profesional" alt="Soldadura y fabricación metálica" class="rounded-2xl w-full h-80 object-cover">
+                            <div class="mt-4 p-4 bg-industrial-900 rounded-2xl border border-industrial-700 flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-bold text-white">¿Necesita una consulta en sitio?</h4>
+                                    <p class="text-xs text-gray-400">Llámenos directamente al (346) 672-5318</p>
+                                </div>
+                                <a href="tel:+13466725318" class="px-4 py-2 bg-accent text-white font-bold text-xs rounded-xl hover:bg-accent-hover transition-colors">
+                                    Llamar Ahora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-industrial-800">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest bg-accent/10 px-3 py-1 rounded-md border border-accent/20">Nuestros Servicios Profesionales</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Soluciones Integrales en Metal y Soldadura</h2>
+                    <p class="text-gray-400">Explore nuestros servicios especializados diseñados para ofrecer máxima durabilidad y excelente estética.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 hover:border-accent transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-industrial-900 border border-industrial-700 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition-all">
+                                <i class="fa-solid fa-warehouse"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Carports Metálicos Personalizados</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Carports a la medida para vehículos, casas rodantes (RVs), botes y maquinaria. Diseñados para resistir fuertes vientos y climas extremos.
+                            </p>
+                        </div>
+                        <button onclick="openServiceDetail('carports')" class="inline-flex items-center space-x-2 text-accent font-bold text-sm group-hover:text-amber-400">
+                            <span>Ver Detalles y Precios</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 hover:border-accent transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-industrial-900 border border-industrial-700 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition-all">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Construcción de Carports</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Construcción profesional integral de sistemas de carports comerciales y residenciales con postes de acero reforzado y techos duraderos.
+                            </p>
+                        </div>
+                        <button onclick="openServiceDetail('construction')" class="inline-flex items-center space-x-2 text-accent font-bold text-sm group-hover:text-amber-400">
+                            <span>Ver Detalles y Precios</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 hover:border-accent transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-industrial-900 border border-industrial-700 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition-all">
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Servicios de Soldadura</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Soldadura móvil y en taller (MIG, TIG, Stick). Uniones estructurales, tuberías y fabricación metálica personalizada bajo demanda.
+                            </p>
+                        </div>
+                        <button onclick="openServiceDetail('welding')" class="inline-flex items-center space-x-2 text-accent font-bold text-sm group-hover:text-amber-400">
+                            <span>Ver Detalles y Precios</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 hover:border-accent transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-industrial-900 border border-industrial-700 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition-all">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Fabricación Metálica</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Corte, doblez y armado preciso de vigas de acero, placas, escaleras personalizadas, barandales, portones y armazones industriales.
+                            </p>
+                        </div>
+                        <button onclick="openServiceDetail('fabrication')" class="inline-flex items-center space-x-2 text-accent font-bold text-sm group-hover:text-amber-400">
+                            <span>Ver Detalles y Precios</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 hover:border-accent transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-industrial-900 border border-industrial-700 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition-all">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Reparaciones Metálicas</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Reparaciones de emergencia y programadas para estructuras de acero dañadas, portones rotos, marcos agrietados, maquinaria pesada y remolques.
+                            </p>
+                        </div>
+                        <button onclick="openServiceDetail('repairs')" class="inline-flex items-center space-x-2 text-accent font-bold text-sm group-hover:text-amber-400">
+                            <span>Ver Detalles y Precios</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 hover:border-accent transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-industrial-900 border border-industrial-700 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition-all">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Estructuras de Acero</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Edificios de acero preingenierizados y personalizados, talleres, bodegas, ampliaciones comerciales y plataformas mezzanines.
+                            </p>
+                        </div>
+                        <button onclick="openServiceDetail('structures')" class="inline-flex items-center space-x-2 text-accent font-bold text-sm group-hover:text-amber-400">
+                            <span>Ver Detalles y Precios</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Gallery Section -->
+            <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-industrial-800">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div class="space-y-4">
+                        <span class="text-accent text-xs font-bold uppercase tracking-widest bg-accent/10 px-3 py-1 rounded-md border border-accent/20">Nuestro Portafolio</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Proyectos Recientes de Metal y Construcción</h2>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-6 md:mt-0">
+                        <button onclick="filterGallery('all')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-accent text-white transition-all" data-filter="all">Todos</button>
+                        <button onclick="filterGallery('carport')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-industrial-800 text-gray-300 hover:bg-industrial-700 transition-all" data-filter="carport">Carports</button>
+                        <button onclick="filterGallery('structure')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-industrial-800 text-gray-300 hover:bg-industrial-700 transition-all" data-filter="structure">Estructuras</button>
+                        <button onclick="filterGallery('welding')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-industrial-800 text-gray-300 hover:bg-industrial-700 transition-all" data-filter="welding">Soldadura</button>
+                        <button onclick="filterGallery('repair')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-industrial-800 text-gray-300 hover:bg-industrial-700 transition-all" data-filter="repair">Reparaciones</button>
+                    </div>
+                </div>
+
+                <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="gallery-item group relative bg-industrial-800 border border-industrial-700 rounded-3xl overflow-hidden shadow-xl" data-category="carport">
+                        <img src="https://placehold.co/600x400/111827/f97316?text=Carport+para+RV+Personalizado" alt="RV Carport" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-industrial-900/40 to-transparent opacity-90"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+                            <span class="text-xs font-bold text-accent uppercase tracking-wider bg-accent/10 px-2.5 py-1 rounded border border-accent/20">Carport Personalizado</span>
+                            <h3 class="text-xl font-bold text-white">Carport Comercial para RV y Autos</h3>
+                            <p class="text-xs text-gray-300">Houston, TX • Armazón de acero calibre pesado</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item group relative bg-industrial-800 border border-industrial-700 rounded-3xl overflow-hidden shadow-xl" data-category="structure">
+                        <img src="https://placehold.co/600x400/111827/f97316?text=Taller+Metalico+Industrial" alt="Steel Workshop" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-industrial-900/40 to-transparent opacity-90"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+                            <span class="text-xs font-bold text-accent uppercase tracking-wider bg-accent/10 px-2.5 py-1 rounded border border-accent/20">Estructura de Acero</span>
+                            <h3 class="text-xl font-bold text-white">Taller Metálico Industrial</h3>
+                            <p class="text-xs text-gray-300">Katy, TX • 4,000 pies cuadrados sin columnas centrales</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item group relative bg-industrial-800 border border-industrial-700 rounded-3xl overflow-hidden shadow-xl" data-category="welding">
+                        <img src="https://placehold.co/600x400/111827/f97316?text=Escalera+Metalica+Arquitectonica" alt="Welding Project" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-industrial-900/40 to-transparent opacity-90"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+                            <span class="text-xs font-bold text-accent uppercase tracking-wider bg-accent/10 px-2.5 py-1 rounded border border-accent/20">Soldadura y Fabricación</span>
+                            <h3 class="text-xl font-bold text-white">Escalera Metálica Arquitectónica</h3>
+                            <p class="text-xs text-gray-300">The Woodlands, TX • Soldadura TIG en acero inoxidable</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item group relative bg-industrial-800 border border-industrial-700 rounded-3xl overflow-hidden shadow-xl" data-category="repair">
+                        <img src="https://placehold.co/600x400/111827/f97316?text=Reparacion+Estructural+de+Acero" alt="Metal Repair" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-industrial-900/40 to-transparent opacity-90"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+                            <span class="text-xs font-bold text-accent uppercase tracking-wider bg-accent/10 px-2.5 py-1 rounded border border-accent/20">Reparación Metálica</span>
+                            <h3 class="text-xl font-bold text-white">Refuerzo de Columnas en Bodega</h3>
+                            <p class="text-xs text-gray-300">Sugar Land, TX • Solución estructural en sitio</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item group relative bg-industrial-800 border border-industrial-700 rounded-3xl overflow-hidden shadow-xl" data-category="carport">
+                        <img src="https://placehold.co/600x400/111827/f97316?text=Carport+Doble+Techo+Vertical" alt="Double Carport" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-industrial-900/40 to-transparent opacity-90"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+                            <span class="text-xs font-bold text-accent uppercase tracking-wider bg-accent/10 px-2.5 py-1 rounded border border-accent/20">Carport Personalizado</span>
+                            <h3 class="text-xl font-bold text-white">Carport Residencial de 2 Autos (Techo Vertical)</h3>
+                            <p class="text-xs text-gray-300">Pearland, TX • Anclaje reforzado</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item group relative bg-industrial-800 border border-industrial-700 rounded-3xl overflow-hidden shadow-xl" data-category="structure">
+                        <img src="https://placehold.co/600x400/111827/f97316?text=Mezzanine+de+Acero+Industrial" alt="Steel Mezzanine" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-industrial-900 via-industrial-900/40 to-transparent opacity-90"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+                            <span class="text-xs font-bold text-accent uppercase tracking-wider bg-accent/10 px-2.5 py-1 rounded border border-accent/20">Estructura de Acero</span>
+                            <h3 class="text-xl font-bold text-white">Mezzanine y Plataforma Industrial</h3>
+                            <p class="text-xs text-gray-300">Conroe, TX • Alta capacidad de carga</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process Section -->
+            <section id="process" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-industrial-800">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest bg-accent/10 px-3 py-1 rounded-md border border-accent/20">Cómo Trabajamos</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Nuestro Proceso de 4 Simples Pasos</h2>
+                    <p class="text-gray-400">Desde la consulta inicial hasta la instalación final, le mantenemos informado en cada etapa.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 relative">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-accent text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg">01</div>
+                        <h3 class="text-xl font-bold text-white mb-3 mt-2">Solicitud por WhatsApp</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Envía tu nombre, medidas y lo que quieres directamente mediante nuestro formulario o botón de WhatsApp.
+                        </p>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 relative">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-accent text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg">02</div>
+                        <h3 class="text-xl font-bold text-white mb-3 mt-2">Evaluación del Terreno</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Nuestros expertos estructurales revisan las condiciones del suelo, permisos locales y validan especificaciones.
+                        </p>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 relative">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-accent text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg">03</div>
+                        <h3 class="text-xl font-bold text-white mb-3 mt-2">Cotización Clara</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Recibe un presupuesto detallado y transparente adaptado exactamente a las medidas de tu proyecto.
+                        </p>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 relative">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-accent text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg">04</div>
+                        <h3 class="text-xl font-bold text-white mb-3 mt-2">Ejecución y Montaje</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Fabricación maestra en nuestro taller seguida de una instalación profesional y segura en su sitio.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto border-t border-industrial-800">
+                <div class="text-center mb-16 space-y-4">
+                    <span class="text-accent text-xs font-bold uppercase tracking-widest bg-accent/10 px-3 py-1 rounded-md border border-accent/20">¿Tiene Dudas?</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Preguntas Frecuentes</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-bold text-white flex items-center justify-between focus:outline-none">
+                            <span>¿Cuánto tiempo toma fabricar e instalar un carport metálico personalizado?</span>
+                            <i class="fa-solid fa-chevron-down text-accent transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-gray-300 text-sm leading-relaxed border-t border-industrial-700/60 pt-4">
+                            Por lo general, los carports estándar se fabrican e instalan en un plazo de 1 a 3 semanas, dependiendo del tamaño, las condiciones climáticas y la aprobación de permisos. Las estructuras de acero complejas pueden tomar de 4 a 6 semanas.
+                        </div>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-bold text-white flex items-center justify-between focus:outline-none">
+                            <span>¿Tramitan los permisos de construcción y zonificación con la ciudad?</span>
+                            <i class="fa-solid fa-chevron-down text-accent transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-gray-300 text-sm leading-relaxed border-t border-industrial-700/60 pt-4">
+                            ¡Sí! Le asistimos con planos de ingeniería, certificaciones de resistencia al viento y la presentación de la documentación para permisos ante los departamentos de construcción locales en nuestras áreas de servicio.
+                        </div>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-bold text-white flex items-center justify-between focus:outline-none">
+                            <span>¿Qué áreas de servicio cubren?</span>
+                            <i class="fa-solid fa-chevron-down text-accent transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-gray-300 text-sm leading-relaxed border-t border-industrial-700/60 pt-4">
+                            Servimos con orgullo a Houston, Katy, Sugar Land, The Woodlands, Pearland, Conroe, Pasadena y comunidades vecinas en Texas. Contáctenos si se encuentra fuera de estas áreas.
+                        </div>
+                    </div>
+
+                    <div class="bg-industrial-800 border border-industrial-700 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-bold text-white flex items-center justify-between focus:outline-none">
+                            <span>¿Ofrecen garantía en sus trabajos de soldadura y edificios metálicos?</span>
+                            <i class="fa-solid fa-chevron-down text-accent transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-gray-300 text-sm leading-relaxed border-t border-industrial-700/60 pt-4">
+                            Absolutamente. Todo nuestro trabajo de acero estructural y soldadura incluye una garantía completa de mano de obra, y los materiales metálicos cuentan con garantías del fabricante de hasta 20 años.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div> <!-- END HOME VIEW -->
+
+
+        <!-- SERVICE DETAIL VIEW -->
+        <div id="view-service-detail" class="view-section hidden py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <button onclick="switchView('home')" class="mb-8 inline-flex items-center space-x-2 bg-industrial-800 border border-industrial-700 text-gray-300 px-4 py-2.5 rounded-xl hover:text-white hover:border-accent transition-all">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Volver al Inicio</span>
+            </button>
+            <div id="service-detail-content" class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+
+        <!-- FULL QUOTE & WHATSAPP VIEW -->
+        <div id="view-quote" class="view-section hidden py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+            <div class="text-center mb-12 space-y-4">
+                <button onclick="switchView('home')" class="inline-flex items-center space-x-2 text-accent text-sm font-bold mb-4">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Volver al Inicio</span>
+                </button>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-white">Solicitud de Cotización por WhatsApp</h1>
+                <p class="text-gray-400">Al enviar este formulario, tu información (nombre, teléfono, medidas y lo que quieres) se compilará y abrirá automáticamente WhatsApp directo al número <strong class="text-accent">(346) 672-5318</strong>.</p>
+            </div>
+
+            <div class="bg-industrial-800 border border-industrial-700 rounded-3xl p-8 sm:p-12 shadow-2xl">
+                <form id="full-quote-form" onsubmit="handleFullQuoteSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase mb-2">Nombre de la persona *</label>
+                            <input type="text" id="q-name" required placeholder="Ej. Carlos Mendoza" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase mb-2">Teléfono *</label>
+                            <input type="tel" id="q-phone" required value="3466725318" placeholder="3466725318" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase mb-2">Correo electrónico *</label>
+                            <input type="email" id="q-email" required placeholder="carlos@example.com" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase mb-2">Ciudad o Código Postal *</label>
+                            <input type="text" id="q-city" required placeholder="Houston, TX / 77001" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase mb-2">Medidas aproximadas *</label>
+                            <input type="text" id="q-dimensions" required placeholder="Ej. 24x36 ft, altura 12 pies" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase mb-2">Tipo de Servicio</label>
+                            <select id="q-service" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent">
+                                <option>Carports Metálicos Personalizados</option>
+                                <option>Construcción de Carports</option>
+                                <option>Servicios de Soldadura</option>
+                                <option>Fabricación Metálica</option>
+                                <option>Reparaciones Metálicas</option>
+                                <option>Estructuras de Acero</option>
+                                <option>Proyectos Metálicos Especiales</option>
+                                <option>Techos Metálicos y Estacionamientos</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase mb-2">¿Qué es lo que quiere? *</label>
+                        <textarea id="q-what" rows="4" required placeholder="Detalla aquí qué es lo que quieres (ej. carport para RV con techo vertical de acero calibre pesado, cerramientos parciales...)" class="w-full bg-industrial-900 border border-industrial-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-accent"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 uppercase mb-2">Adjuntar fotografías o planos (Opcional)</label>
+                        <div class="border-2 border-dashed border-industrial-700 hover:border-accent rounded-2xl p-6 text-center cursor-pointer bg-industrial-900 transition-colors">
+                            <input type="file" id="q-file" multiple class="hidden" onchange="handleFileSelect(event)">
+                            <label for="q-file" class="cursor-pointer space-y-2 block">
+                                <i class="fa-solid fa-cloud-arrow-up text-3xl text-accent"></i>
+                                <p class="text-sm text-gray-300 font-semibold" id="file-label-text">Haz clic para subir o arrastra tus archivos aquí</p>
+                                <p class="text-xs text-gray-500">PNG, JPG, PDF hasta 10MB</p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-4 rounded-2xl shadow-xl shadow-emerald-900/30 transition-all text-lg flex items-center justify-center space-x-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Enviar Mensaje a WhatsApp (346) 672-5318</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="contact" class="bg-industrial-900 border-t border-industrial-700 pt-16 pb-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-industrial-800 border border-industrial-600 rounded-xl flex items-center justify-center text-accent">
+                        <svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 80L35 25H50L65 80H53L48 60H32L27 80H15Z" fill="currentColor"/>
+                            <path d="M10 85H90V92H10V85Z" fill="#f97316"/>
+                        </svg>
+                    </div>
+                    <span class="text-lg font-black text-white">MAC WELDING BUILDING</span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Construcción metálica pesada, carports personalizados y servicios de soldadura certificados construidos con fuerza y precisión.
+                </p>
+                <div class="pt-2 flex space-x-3">
+                    <a href="https://www.facebook.com/search/top?q=Mac%20welding%20and%20building" target="_blank" class="inline-flex items-center space-x-2 text-xs font-bold text-gray-300 bg-industrial-800 border border-industrial-700 px-4 py-2.5 rounded-xl hover:border-blue-500 hover:text-blue-400 transition-all">
+                        <i class="fa-brands fa-facebook text-blue-500 text-base"></i>
+                        <span>Mac welding and building</span>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 tracking-wide">Enlaces Rápidos</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><a href="#home" onclick="switchView('home')" class="hover:text-accent transition-colors">Inicio</a></li>
+                    <li><a href="#services" onclick="switchView('home'); scrollToSection('services')" class="hover:text-accent transition-colors">Servicios y Precios</a></li>
+                    <li><a href="#projects" onclick="switchView('home'); scrollToSection('projects')" class="hover:text-accent transition-colors">Galería de Proyectos</a></li>
+                    <li><a href="#process" onclick="switchView('home'); scrollToSection('process')" class="hover:text-accent transition-colors">Nuestro Proceso</a></li>
+                    <li><a href="#faq" onclick="switchView('home'); scrollToSection('faq')" class="hover:text-accent transition-colors">Preguntas Frecuentes</a></li>
+                    <li><button onclick="switchView('quote')" class="hover:text-accent transition-colors">Cotizar por WhatsApp</button></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 tracking-wide">Nuestros Servicios</h4>
+                <ul class="space-y-2.5 text-sm text-gray-400">
+                    <li><button onclick="openServiceDetail('carports')" class="hover:text-accent transition-colors text-left">Carports Personalizados</button></li>
+                    <li><button onclick="openServiceDetail('construction')" class="hover:text-accent transition-colors text-left">Construcción de Carports</button></li>
+                    <li><button onclick="openServiceDetail('welding')" class="hover:text-accent transition-colors text-left">Servicios de Soldadura</button></li>
+                    <li><button onclick="openServiceDetail('fabrication')" class="hover:text-accent transition-colors text-left">Fabricación Metálica</button></li>
+                    <li><button onclick="openServiceDetail('repairs')" class="hover:text-accent transition-colors text-left">Reparaciones Metálicas</button></li>
+                    <li><button onclick="openServiceDetail('structures')" class="hover:text-accent transition-colors text-left">Estructuras de Acero</button></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 tracking-wide">Contacto y Horario</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-location-dot text-accent mt-1"></i>
+                        <span>123 Industrial Parkway, Houston, TX 77001</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone text-accent"></i>
+                        <a href="tel:+13466725318" class="hover:text-white font-semibold">(346) 672-5318</a>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-envelope text-accent"></i>
+                        <a href="mailto:info@macweldingbuilding.com" class="hover:text-white">info@macweldingbuilding.com</a>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-clock text-accent mt-1"></i>
+                        <span>Lun - Sáb: 7:00 AM - 6:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-industrial-800 text-center text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-between">
+            <p>&copy; 2026 Mac Welding Building. Todos los derechos reservados. Construido con fuerza.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="#" onclick="showPrivacyModal()" class="hover:text-gray-300">Política de Privacidad</a>
+                <a href="#" onclick="showSitemapModal()" class="hover:text-gray-300">Mapa del Sitio y SEO</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-0 left-0 right-0 z-30 bg-industrial-800/95 backdrop-blur-md border-t border-industrial-700 p-3 flex md:hidden items-center justify-around shadow-2xl">
+        <a href="tel:+13466725318" class="flex items-center space-x-1.5 text-white font-bold text-xs bg-industrial-900 border border-industrial-700 px-3 py-2.5 rounded-xl">
+            <i class="fa-solid fa-phone text-accent"></i>
+            <span>Llamar</span>
+        </a>
+        <a href="https://wa.me/13466725318?text=Hola%20Mac%20Welding%20Building,%20necesito%20una%20cotización." target="_blank" class="flex items-center space-x-1.5 text-white font-bold text-xs bg-emerald-600 px-3 py-2.5 rounded-xl shadow-md">
+            <i class="fa-brands fa-whatsapp text-white text-base"></i>
+            <span>WhatsApp</span>
+        </a>
+        <a href="https://www.facebook.com/search/top?q=Mac%20welding%20and%20building" target="_blank" class="flex items-center space-x-1.5 text-white font-bold text-xs bg-blue-600 px-3 py-2.5 rounded-xl shadow-md">
+            <i class="fa-brands fa-facebook text-white text-base"></i>
+            <span>Facebook</span>
+        </a>
+        <button onclick="switchView('quote')" class="flex items-center space-x-1 text-white font-bold text-xs bg-accent px-3 py-2.5 rounded-xl shadow-md">
+            <i class="fa-solid fa-ruler-combined"></i>
+            <span>Cotizar</span>
+        </button>
+    </div>
+
+    <script>
+        function switchView(viewName) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            const views = document.querySelectorAll('.view-section');
+            views.forEach(v => v.classList.add('hidden'));
+
+            if (viewName === 'home') {
+                document.getElementById('view-home').classList.remove('hidden');
+            } else if (viewName === 'quote') {
+                document.getElementById('view-quote').classList.remove('hidden');
+            } else if (viewName === 'service-detail') {
+                document.getElementById('view-service-detail').classList.remove('hidden');
+            }
+        }
+
+        function scrollToSection(sectionId) {
+            const el = document.getElementById(sectionId);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function toggleMobileMenu() {
+            const drawer = document.getElementById('mobile-drawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            content.classList.toggle('hidden');
+            if (icon) {
+                icon.classList.toggle('rotate-180');
+            }
+        }
+
+        function filterGallery(category) {
+            const buttons = document.querySelectorAll('.gallery-filter-btn');
+            buttons.forEach(btn => {
+                if(btn.getAttribute('data-filter') === category) {
+                    btn.classList.remove('bg-industrial-800', 'text-gray-300');
+                    btn.classList.add('bg-accent', 'text-white');
+                } else {
+                    btn.classList.remove('bg-accent', 'text-white');
+                    btn.classList.add('bg-industrial-800', 'text-gray-300');
+                }
+            });
+
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (category === 'all' || itemCat === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        const servicesData = {
+            carports: {
+                title: "Carports Metálicos Personalizados",
+                tagline: "Diseñados para Resistir Climas Extremos y Proteger sus Vehículos",
+                image: "https://placehold.co/900x500/111827/f97316?text=Carports+Metalicos+Personalizados",
+                description: "Nuestros carports metálicos personalizados brindan una protección robusta y estética para automóviles, casas rodantes (RVs), botes y equipo pesado. Construidos con acero comercial de alto calibre y sistemas de anclaje seguro.",
+                benefits: [
+                    "Diseñados para altas cargas de viento y nieve",
+                    "Dimensiones personalizadas para 1, 2 o más autos y RVs",
+                    "Armazón de acero galvanizado sin mantenimiento",
+                    "Elección de paneles de techo vertical u horizontal"
+                ],
+                faqs: [
+                    { q: "¿Cuál es la garantía en los carports personalizados?", a: "Ofrecemos una garantía estructural de 20 años en todo el armazón de acero y 10 años en pintura y paneles." },
+                    { q: "¿Se pueden cerrar los carports más adelante para hacerlos garajes?", a: "¡Sí! Nuestros diseños modulares permiten la conversión sencilla a garajes metálicos cerrados o talleres." }
+                ]
+            },
+            construction: {
+                title: "Construcción de Carports Metálicos",
+                tagline: "Instalación Profesional Llave en Mano en Texas",
+                image: "https://placehold.co/900x500/111827/f97316?text=Construccion+de+Carports",
+                description: "Construcción integral desde la preparación del terreno y vaciado de planchas de concreto hasta la erección profesional del armazón y techado. Gestionamos cada detalle para garantizar integridad estructural absoluta.",
+                benefits: [
+                    "Preparación completa del terreno y cimentación en concreto",
+                    "Cuadrillas de instalación certificadas bajo estrictos protocolos",
+                    "Asistencia en permisos y cumplimiento de zonificación",
+                    "Sitio de trabajo limpio al terminar el proyecto"
+                ],
+                faqs: [
+                    { q: "¿Necesito una losa de concreto antes de la construcción?", a: "Aunque el concreto es recomendado, también podemos anclar los carports firmemente sobre asfalto o con anclajes de tierra reforzados." }
+                ]
+            },
+            welding: {
+                title: "Servicios de Soldadura Profesional",
+                tagline: "Soldadura Móvil y en Taller por Maestros Certificados AWS",
+                image: "https://placehold.co/900x500/111827/f97316?text=Servicios+de+Soldadura",
+                description: "Soldadura experta MIG, TIG y Stick para proyectos industriales, comerciales y residenciales. Ya sea fabricación en taller o soldadura móvil de emergencia en su sitio de trabajo, entregamos uniones impecables.",
+                benefits: [
+                    "Soldadores Certificados AWS con amplia trayectoria",
+                    "Unidades móviles equipadas para reparaciones en sitio",
+                    "Acero estructural, aluminio y acero inoxidable",
+                    "Estrictas pruebas de calidad e inspección de soldaduras"
+                ],
+                faqs: [
+                    { q: "¿Ofrecen servicio de soldadura móvil de emergencia?", a: "Sí, nuestras unidades móviles están disponibles para reparaciones estructurales o de maquinaria urgentes." }
+                ]
+            },
+            fabrication: {
+                title: "Fabricación Metálica",
+                tagline: "Vigas de Acero, Escaleras, Barandales y Trabajos Arquitectónicos",
+                image: "https://placehold.co/900x500/111827/f97316?text=Fabricacion+Metalica",
+                description: "Fabricación metálica de precisión adaptada a sus planos. Desde vigas y columnas de acero estructural pesado hasta escaleras decorativas personalizadas, portones de seguridad y plataformas industriales.",
+                benefits: [
+                    "Corte, doblez y perfilado por plasma a medida",
+                    "Estructuras de acero para edificios comerciales",
+                    "Barandales arquitectónicos, cercas y portones",
+                    "Opciones de acabado en primer y pintura en polvo"
+                ],
+                faqs: [
+                    { q: "¿Pueden fabricar a partir de planos personalizados?", a: "Absolutamente. Traiga sus dibujos CAD o bosquejos y nuestro equipo de fabricación construirá según sus especificaciones exactas." }
+                ]
+            },
+            repairs: {
+                title: "Reparaciones Metálicas",
+                tagline: "Restauraciones Rápidas y Confiables Estructurales y de Equipos",
+                image: "https://placehold.co/900x500/111827/f97316?text=Reparacion+Metalica",
+                description: "No reemplace cuando puede reparar. Arreglamos columnas de acero estructural dañadas, remolques agrietados, piezas de maquinaria rotas, portones y armazones industriales devolviéndoles su resistencia original.",
+                benefits: [
+                    "Evaluación de daños estructurales en sitio",
+                    "Placas de refuerzo y fortalecimiento de juntas",
+                    "Reparación de ejes de remolques y marcos",
+                    "Mínimo tiempo de inactividad para operaciones comerciales"
+                ],
+                faqs: [
+                    { q: "¿Qué tan rápido pueden atender una solicitud de reparación?", a: "Ofrecemos programación prioritaria para reparaciones estructurales urgentes." }
+                ]
+            },
+            structures: {
+                title: "Estructuras de Acero",
+                tagline: "Edificios Metálicos Preingenierizados, Talleres y Bodegas",
+                image: "https://placehold.co/900x500/111827/f97316?text=Estructuras+de+Acero",
+                description: "Edificios de acero de claro libre diseñados para talleres, bodegas agrícolas, almacenes comerciales y hangares. Construidos para máxima amplitud interior sin columnas de soporte intermedias.",
+                benefits: [
+                    "Diseño de claro libre de más de 100 pies de ancho",
+                    "Alta resistencia contra fuego, plagas y humedad",
+                    "Paquetes de aislamiento de alta eficiencia energética",
+                    "Tiempos de erección rápidos en comparación con obra tradicional"
+                ],
+                faqs: [
+                    { q: "¿Los edificios de acero vienen con aislamiento?", a: "Proporcionamos diversas opciones de aislamiento incluyendo espuma de poliuretano y mantas de barrera radiante." }
+                ]
+            }
+        };
+
+        function openServiceDetail(serviceKey) {
+            const data = servicesData[serviceKey];
+            if (!data) return;
+
+            let benefitsHtml = data.benefits.map(b => `<li class="flex items-center space-x-3 text-gray-300 text-sm"><i class="fa-solid fa-check text-accent"></i><span>${b}</span></li>`).join('');
+            let faqListHtml = data.faqs.map(f => `<div class="bg-industrial-900 p-4 rounded-xl border border-industrial-700"><h5 class="font-bold text-white text-sm mb-1">${f.q}</h5><p class="text-xs text-gray-400">${f.a}</p></div>`).join('');
+
+            const container = document.getElementById('service-detail-content');
+            container.innerHTML = `
+                <div class="space-y-6">
+                    <img src="${data.image}" alt="${data.title}" class="w-full h-80 object-cover rounded-2xl shadow-lg border border-industrial-700">
+                    <div class="space-y-2">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider bg-accent/10 px-3 py-1 rounded-md border border-accent/20">Servicio Especializado</span>
+                        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">${data.title}</h1>
+                        <p class="text-lg text-gray-300 font-medium">${data.tagline}</p>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">${data.description}</p>
+                    
+                    <div class="pt-4 border-t border-industrial-700">
+                        <h3 class="text-xl font-bold text-white mb-4">Beneficios Clave del Servicio</h3>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            ${benefitsHtml}
+                        </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-industrial-700">
+                        <h3 class="text-xl font-bold text-white mb-4">Preguntas Frecuentes</h3>
+                        <div class="space-y-3">
+                            ${faqListHtml}
+                        </div>
+                    </div>
+
+                    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between bg-industrial-900 p-6 rounded-2xl border border-industrial-700">
+                        <div>
+                            <h4 class="font-bold text-white text-lg">¿Listo para cotizar tu proyecto de ${data.title}?</h4>
+                            <p class="text-xs text-gray-400">Contáctanos vía WhatsApp o por teléfono.</p>
+                        </div>
+                        <button onclick="switchView('quote')" class="mt-4 sm:mt-0 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl shadow-lg transition-all flex items-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Cotizar por WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            switchView('service-detail');
+        }
+
+        function handleFileSelect(e) {
+            const files = e.target.files;
+            if (files.length > 0) {
+                document.getElementById('file-label-text').innerText = `${files.length} archivo(s) seleccionado(s): ${files[0].name}`;
+            }
+        }
+
+        function handleQuickQuote(e) {
+            e.preventDefault();
+            const name = document.getElementById('quick-name').value;
+            const phone = document.getElementById('quick-phone').value;
+            const measure = document.getElementById('quick-measure').value;
+            const what = document.getElementById('quick-what').value;
+
+            const message = `Hola Mac Welding Building, solicito información para un proyecto.%0A%0A*Nombre:* ${encodeURIComponent(name)}%0A*Teléfono:* ${encodeURIComponent(phone)}%0A*Medidas aproximadas:* ${encodeURIComponent(measure)}%0A*¿Qué es lo que quiere?:* ${encodeURIComponent(what)}`;
+            
+            const whatsappUrl = `https://wa.me/13466725318?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function handleFullQuoteSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('q-name').value;
+            const phone = document.getElementById('q-phone').value;
+            const email = document.getElementById('q-email').value;
+            const city = document.getElementById('q-city').value;
+            const dimensions = document.getElementById('q-dimensions').value;
+            const service = document.getElementById('q-service').value;
+            const what = document.getElementById('q-what').value;
+
+            const message = `Hola Mac Welding Building, nuevo pedido de cotización desde la web:%0A%0A*Nombre de la persona:* ${encodeURIComponent(name)}%0A*Teléfono:* ${encodeURIComponent(phone)}%0A*Correo:* ${encodeURIComponent(email)}%0A*Ciudad / CP:* ${encodeURIComponent(city)}%0A*Servicio:* ${encodeURIComponent(service)}%0A*Medidas aproximadas:* ${encodeURIComponent(dimensions)}%0A*¿Qué es lo que quiere?:* ${encodeURIComponent(what)}`;
+
+            const whatsappUrl = `https://wa.me/13466725318?text=${message}`;
+            
+            showToast("Abriendo WhatsApp...", "Redirigiendo con tu mensaje compilado al número (346) 672-5318.", "success");
+            
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+            }, 800);
+        }
+
+        function showToast(title, msg, type = 'success') {
+            const toast = document.getElementById('toast');
+            const titleEl = document.getElementById('toast-title');
+            const msgEl = document.getElementById('toast-msg');
+            const iconEl = document.getElementById('toast-icon');
+
+            titleEl.innerText = title;
+            msgEl.innerText = msg;
+            iconEl.innerHTML = type === 'success' ? '<i class="fa-solid fa-circle-check text-emerald-400"></i>' : '<i class="fa-solid fa-triangle-exclamation text-amber-400"></i>';
+
+            toast.classList.remove('translate-y-32', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-32', 'opacity-0');
+            }, 5000);
+        }
+
+        function showPrivacyModal() {
+            showToast("Política de Privacidad", "Mac Welding Building respeta su privacidad. Todos los datos se manejan de forma segura.", "success");
+        }
+
+        function showSitemapModal() {
+            showToast("Mapa del Sitio y SEO", "El Sitemap XML y metadatos SEO se encuentran activos para buscadores locales.", "success");
+        }
+    </script>
+
+</body>
+</html>
